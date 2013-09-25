@@ -9,7 +9,7 @@ function readfile(f) {
         out.appendChild(document.createTextNode(text));
         
         oAuth_Token = document.getElementById('oAuth_Token').value;
-        alert(oAuth_Token);
+        //alert(oAuth_Token);
         if(oAuth_Token!='')
         	{
         	document.getElementById("save").style.display = '';
