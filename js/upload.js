@@ -8,8 +8,8 @@ function readfile(f) {
         out.innerHTML = "";                          
         out.appendChild(document.createTextNode(text));
         
-        oAuth_Token = document.getElementById('oAuth_Token').value
-        alert(oAuth_Token)
+        oAuth_Token = document.getElementById('oAuth_Token').value;
+        alert(oAuth_Token);
         if(oAuth_Token!='')
         	{
         	document.getElementById("save").style.display = '';
