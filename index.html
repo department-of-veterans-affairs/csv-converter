@@ -30,12 +30,10 @@
         if($oAuth_Token!='')
             {
             document.getElementById('oAuth_Token').value = $oAuth_Token;    
-            document.getElementById("login").style.display = 'none';
             }  
         else
             {
             document.getElementById("save").style.display = 'none';
-            document.getElementById("login").style.display = '';
             }                       
         }
     
@@ -124,9 +122,6 @@
             <p><input type="file" onchange="readfile(this.files[0])"></input></p>
           </div>     
           <br />  
-          <div id="login" style="display: none;">  
-            <p align="center"><a href="http://kinlane.github.io/csv-converter/oauth.html">Login</a></p>
-          </div>
           <div id="save" style="display: none;"> 
             <p align="center"><a href="#" onclick="saveConversion();">Save</a></p>
           </div>    
