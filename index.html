@@ -18,7 +18,6 @@
   
   <script src="js/base64.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/oauth.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/github.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/utilities.js" type="text/javascript" charset="utf-8"></script>  
 
@@ -68,7 +67,7 @@
         $CSVOutput = document.getElementById("dataInput").value;
         $DataOutput = document.getElementById("dataOutput").value;
       
-        var repo = github.getRepo('kinlane', 'csv-converter'); 
+        var repo = github.getRepo('department-of-veterans-affairs', 'csv-converter'); 
         repo.write('master',$UploadCSVName, $CSVOutput, 'Saving CSV Input for ' + $UploadCSVName, function(err) {
             
         }); 
